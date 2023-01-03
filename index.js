@@ -3,10 +3,10 @@ const app = express();
 
 app.use(express.static("public"));
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 8080;
 
 app.get("/yeah", (req, res) => {
-    res.send("nöfwii.");
+    res.send("yeah!!!");
 });
 
 app.listen(port, () => {
